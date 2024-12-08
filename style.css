@@ -1,0 +1,517 @@
+/* Start CSS reset*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: #444;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ----------------Fonts----------------*/
+@font-face {
+  font-family: "iransans-light";
+  src: url("./fonts/IRANSans_Light.ttf") format(truetype);
+}
+@font-face {
+  font-family: "iransans-reg";
+  src: url("./fonts/IRANSans.ttf") format(truetype);
+}
+@font-face {
+  font-family: "iransans-med";
+  src: url("./fonts/IRANSans_Medium.ttf") format(truetype);
+}
+@font-face {
+  font-family: "iransans-bold";
+  src: url("./fonts/IRANSans_Bold.ttf") format(truetype);
+}
+@font-face {
+  font-family: "kalemeh";
+  src: url("./fonts/KalamehWeb_Regular.ttf") format(truetype);
+}
+
+/* ------------ TOP SECTION ------------ */
+.main-img-container {
+  width: 16rem;
+}
+.main-img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid #5e44b9;
+  object-fit: cover;
+}
+.main-title-container {
+  margin-top: 3rem;
+  text-align: center;
+}
+.main-title-container h1 {
+  font-size: 2.5rem;
+  color: #5e44b9;
+  font-family: "iransans-bold";
+}
+.main-title-container h3 {
+  font-size: 1.2rem;
+  font-family: "iransans-med";
+  margin-top: 1.5rem;
+}
+.button-container {
+  /* margin: 5rem */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+.button-container span {
+  color: #fff;
+  background-color: #827ffe;
+  padding: 0.7rem 3rem;
+  font-family: "iransans-reg";
+  border-radius: 30px;
+  margin: 1rem;
+  cursor: pointer;
+  box-shadow: #817ffe83 0px 4px 3px, #817ffe83 0px 8px 20px;
+  transition: all ease-in 0.2s;
+}
+.button-container span a {
+  color: white;
+  text-decoration: none;
+}
+.button-container span:hover {
+  background-color: cornflowerblue;
+}
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ----------- SKILLS SECTION -----------  */
+.my-skills-container h1 {
+  color: #5e44b9;
+  font-size: 2rem;
+  font-family: "iransans-bold";
+  text-align: center;
+  /* margin-bottom: 7rem; */
+  margin-bottom: 5rem;
+}
+.img-box-container {
+  width: 5rem;
+  overflow: hidden;
+}
+.img-box-container img {
+  height: 100%;
+  width: 100%;
+}
+.box-skill {
+  flex-basis: 21rem;
+  background-color: #fcfcfc;
+  margin: 1rem;
+  padding: 1.5rem;
+  box-shadow: rgb(0 0 0 / 7%) -4px 9px 25px -6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.box-skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.text-box-container {
+  margin-top: 1rem;
+}
+.text-box-container h2 {
+  font-family: "iransans-bold";
+  font-size: 1.4rem;
+}
+.text-box-container p {
+  font-size: 1rem;
+  font-family: "iransans-reg";
+  margin: 1rem 0;
+  line-height: 1.8;
+}
+
+/* ---------- PORTFOLIO SECTION ----------  */
+.portfolio-container {
+  margin-bottom: 5rem;
+}
+.portfolio-container h1 {
+  color: #5e44b9;
+  font-size: 2rem;
+  font-family: "iransans-bold";
+  text-align: center;
+  /* margin: 7rem 0; */
+  margin: 5rem 0;
+}
+.portfolio-images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.img-container {
+  /* height: none; */
+  flex-basis: 21rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  filter: blur(3px) sepia(100%);
+  transition: filter 0.2s linear;
+}
+.img-container:hover {
+  filter: none;
+}
+.img-container img {
+  height: 100%;
+  width: 100%;
+}
+
+/* ---------- COMMENTS SECTION ---------- */
+.comments-container h1 {
+  color: #ffeb3b;
+  font-size: 2rem;
+  font-family: "iransans-bold";
+  text-align: center;
+  padding: 1rem;
+}
+.comments {
+  background-image: linear-gradient(to left, #0052d4, #827ffe, #6fb1fc);
+}
+.user-img {
+  max-width: 4rem;
+  margin-left: 1rem;
+}
+.user-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.user-comment {
+  display: flex;
+  align-items: center;
+  border-right: 1px groove #fff;
+  padding: 1rem;
+  flex-basis: 10rem;
+  margin: 1rem;
+}
+
+.user-text {
+  color: white;
+}
+.user-text h3 {
+  font-family: "iransans-bold";
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: inherit;
+}
+.user-text p {
+  font-family: "iransans-reg";
+  font-size: 0.9rem;
+  color: inherit;
+  line-height: 1.8rem;
+}
+.users-comments-container {
+  display: flex;
+  flex-direction: column;
+}
+/* ----------- CONTACT ME SECTION ----------- */
+.img-contact-me {
+  width: 25rem;
+  overflow: hidden;
+}
+.img-contact-me img {
+  width: 100%;
+}
+.contact-me-container {
+  margin: 3rem auto;
+  box-shadow: rgb(17 17 26/5%) 0px 4px 16px, rgb(17 17 26/5%) 0px 8px 32px;
+  border-radius: 1rem;
+  max-width: 61rem;
+  display: flex;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.icons i {
+  color: #444;
+}
+.right-side-text {
+  font-family: "iransans-med";
+  line-height: 3rem;
+  padding: 1rem 3rem 0 0;
+}
+.form h1 {
+  font-size: 3rem;
+  font-family: "iransans-bold";
+  margin-bottom: 4rem;
+  color: #4c49b9;
+  text-align: right;
+  width: 100%;
+  margin: 1rem;
+  position: relative;
+  margin-bottom: 3rem;
+  line-height: 4.5rem;
+}
+.form h1::after {
+  content: "";
+  display: block;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  width: 40%;
+  background-color: green;
+  border-radius: 25px;
+}
+.form > input {
+  min-width: 100%;
+  border: none;
+  outline: none;
+  /* min-width: 24rem; */
+  min-height: 3rem;
+  background-color: #f4f6fc;
+  font-family: "iransans-reg";
+  padding-right: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  color: #444;
+}
+.form input::placeholder,
+.form .text-area::placeholder {
+  color: #827fee;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  align-items: center;
+}
+.text-area {
+  min-width: 100%;
+  min-height: 5rem;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  background-color: #f4f6fc;
+  margin: 1rem;
+  font-family: "iransans-reg";
+  resize: none;
+}
+.btn-container {
+  display: flex;
+  width: 24rem;
+  justify-content: flex-start;
+}
+#form-btn {
+  min-height: 2rem;
+  font-family: "iransans-reg";
+  transition: all ease 1s;
+  outline: none;
+  border: none;
+  background-color: #827ffe;
+  color: white;
+  padding: 0.7rem 3rem;
+  border-radius: 2rem;
+  box-shadow: #817fee -4px 9px 25px -6px;
+  cursor: pointer;
+}
+
+/* -----------FOOTER SECTION-----------  */
+footer {
+  background-color: #15133c;
+  text-align: center;
+  padding: 3rem 0;
+}
+footer div {
+  color: white;
+  font-family: "iransans-reg";
+  font-size: 1.3rem;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* X-Small devices (Portait phones, less than 576px */
+@media (max-width: 430.98px) {
+  .form > input {
+    min-width: 12rem;
+  }
+  .text-area {
+    min-width: 12rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .form {
+    align-items: center;
+  }
+}
+
+/* Small devices (Landscap phones, less than 768px */
+@media (max-width: 767.98px) {
+  .box-skill {
+    flex-basis: 100%;
+  }
+  .img-container {
+    flex-basis: 100%;
+    height: 17rem;
+  }
+}
+
+/* X-Small devices (Tablate, less than 992px */
+@media (max-width: 991.98px) {
+  .contact-me-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .right-side-text {
+    padding: 0;
+  }
+  .form h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 4rem;
+  }
+  .btn-container {
+    justify-content: center;
+  }
+  .form input {
+    min-width: 100%;
+  }
+  .text-area {
+    min-width: 100%;
+  }
+}
+
+/* X-Small devices (Desktop, less than 1200px */
+@media (max-width: 1199.98px) {
+}
+
+/* X-Small devices (Large, less than 1400px */
+@media (max-width: 1399.98px) {
+}
